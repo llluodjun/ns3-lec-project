@@ -22,9 +22,9 @@ using namespace ns3;
 
 NS_LOG_COMPONENT_DEFINE ("HelloSimulator");
 
-static void printHello(std::string word,std::string num) {
+static void printHello(std::string word,std::string num,float freq) {
 	std::cout<<Simulator::Now()<<" Hello "<<word<<num<<std::endl;
-	Simulator::Schedule(Seconds(2),&printHello,word,num);
+	Simulator::Schedule(Seconds(freq),&printHello,word,num,freq);
 }
 // ./test arg0 arg1 arg2
 // argc=4
@@ -41,11 +41,13 @@ main (int argc, char *argv[])
 
 	std::string name;
 	std::string number;
+	float frequency;
 	cmd.AddValue ("name", "my name", name);
 	cmd.AddValue ("number","my number",number);
+	cmd.AddValue ("frequency","the frequency",frequency);
 	cmd.Parse(argc,argv);
 
-	printHello(name,number);
+	printHello(name,number,frequency);
 	std::cout<<"hello commit"<<std::endl;
 
 	Simulator::Stop(Seconds(8));
