@@ -1,0 +1,9 @@
+#实验报告四
+##拓扑图如下：
+![](http://ww3.sinaimg.cn/large/aad0b32agw1f5id91prehj20ft04g745.jpg)
+##初始状态位置如下：
+![](http://ww2.sinaimg.cn/mw690/aad0b32agw1f5id92kmf9j20ku0gidge.jpg)
+##仿真5.1秒后位置如下：
+![](http://ww3.sinaimg.cn/mw690/aad0b32agw1f5id98l6vuj20kq0gh752.jpg)
+##仿真9.4秒后位置如下：
+![](http://ww4.sinaimg.cn/mw690/aad0b32agw1f5id96zc5fj20kg0gd3z2.jpg)
